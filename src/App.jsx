@@ -1,10 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
+  FileCode,
   Code,
+  Eclipse,
+  Braces,
   Layout,
   Github,
   Linkedin,
   Mail,
+  Rocket,
   ExternalLink,
   Terminal,
   Cpu,
@@ -205,28 +209,52 @@ export default function Portfolio() {
 
   const skills = [
     {
+      name: "Html5",
+      icon: <FileCode size={24} />,
+      level: "Expert",
+      color: "text-orange-600 dark:text-orange-400",
+    },
+    {
+      name: "Css3",
+      icon: <Eclipse size={24} />,
+      level: "Expert",
+      color: "text-blue-600 dark:text-blue-400",
+    },
+    {
+      name: "Js",
+      icon: <Braces size={24} />,
+      level: "Intermediate",
+      color: "text-yellow-600 dark:text-yellow-400",
+    },
+    {
       name: "React",
       icon: <Code size={24} />,
-      level: "Expert",
+      level: "Intermediate",
       color: "text-cyan-600 dark:text-cyan-400",
     },
     {
       name: "TypeScript",
       icon: <Terminal size={24} />,
-      level: "Advanced",
+      level: "Basic",
       color: "text-blue-600 dark:text-blue-400",
     },
     {
       name: "Tailwind CSS",
       icon: <Palette size={24} />,
-      level: "Expert",
+      level: "Intermediate",
       color: "text-teal-600 dark:text-teal-400",
     },
+    // {
+    //   name: "Next.js",
+    //   icon: <Globe size={24} />,
+    //   level: "Advanced",
+    //   color: "text-purple-600 dark:text-purple-400",
+    // },
     {
-      name: "Next.js",
-      icon: <Globe size={24} />,
-      level: "Advanced",
-      color: "text-purple-600 dark:text-purple-400",
+      name: "Bootstrab5",
+      icon: <Rocket size={24} />,
+      level: "Expert",
+      color: "text-violet-600 dark:text-violet-400",
     },
     {
       name: "Node.js",
@@ -461,7 +489,7 @@ export default function Portfolio() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-300 dark:divide-white/10">
                 {[
                   { label: "Experience", value: "3.5+", suffix: "Years" },
-                  { label: "Projects", value: "25+", suffix: "Completed" },
+                  { label: "Projects", value: "150+", suffix: "Completed" },
                   { label: "Expertise", value: "100%", suffix: "Frontend" },
                   { label: "Availability", value: "24/7", suffix: "Support" },
                 ].map((stat, i) => (
@@ -631,13 +659,24 @@ export default function Portfolio() {
 
                     <div className="space-y-6">
                       <a
-                        href="mailto:hello@example.com"
+                        href="mailto:jayapragashthimmapan694@gmail.com"
                         className="flex items-center space-x-4 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors group"
                       >
                         <div className="p-4 rounded-full bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 group-hover:bg-cyan-500 group-hover:text-white dark:group-hover:text-black transition-all duration-300">
                           <Mail size={24} />
                         </div>
-                        <span className="text-lg">jayaprakash@example.com</span>
+                        <span className="text-lg">
+                          jayapragashthimmapan694@gmail.com
+                        </span>
+                      </a>
+                      <a
+                        href="mailto:jhonmacc74@gmail.com"
+                        className="flex items-center space-x-4 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors group"
+                      >
+                        <div className="p-4 rounded-full bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 group-hover:bg-cyan-500 group-hover:text-white dark:group-hover:text-black transition-all duration-300">
+                          <Mail size={24} />
+                        </div>
+                        <span className="text-lg">jhonmacc74@gmail.com</span>
                       </a>
                       <div className="flex gap-4 pt-4">
                         {[Github, Linkedin, Globe].map((Icon, i) => (
