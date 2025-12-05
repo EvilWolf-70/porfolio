@@ -818,7 +818,7 @@ export default function Portfolio() {
         </div>
         <p className="text-sm">
           © {new Date().getFullYear()} Jayaprakash T. Built with React, Tailwind
-          & ❤️.
+          & 😍.
         </p>
       </footer>
 
