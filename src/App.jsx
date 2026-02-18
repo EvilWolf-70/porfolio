@@ -26,6 +26,7 @@ import {
   AlertCircle,
   Loader2,
 } from "lucide-react";
+import resume from './assets/resume/Jayaprakash_T_Resume.pdf';
 
 // --- Utility Components & Styles ---
 
@@ -381,7 +382,7 @@ export default function Portfolio() {
                   {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
                 </button>
 
-                <a href="#resume" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:scale-105 inline-block">
+                <a href={resume} download className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:scale-105 inline-block">
                   Resume
                 </a>
               </div>
