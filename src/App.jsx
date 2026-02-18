@@ -272,28 +272,31 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "E-Commerce Dashboard",
+      title: "[ZLAATA] E-Commerce Site",
       description:
-        "A high-performance analytics dashboard featuring real-time data visualization and dark mode.",
-      tags: ["React", "Recharts", "Firebase"],
+        "Built a fully responsive e-commerce frontend using HTML, CSS, Bootstrap, JavaScript, and jQuery with dynamic product listings. Implemented interactive cart functionality and seamless UI components to enhance user experience across all devices.",
+      tags: ["HTML5", "CSS3", "JAVA SCRIPT", "jQuery", "Bootstrap5", "laravel"],
       color: "from-cyan-500 to-blue-500",
       icon: <Layout size={32} />,
+      link : "https://www.zlaata.com/",
     },
     {
-      title: "AI Chat Interface",
+      title: "Page Hierarchy Editor ",
       description:
-        "A glassmorphic chat application integrated with LLM APIs, featuring streaming responses.",
-      tags: ["Next.js", "Tailwind", "OpenAI API"],
+        "A Hierarchy Editor application that allows users to create and visualize hierarchical (tree-like) structures in a simple and intuitive way. This project is useful for representing organizational charts, category trees, and nested data relationships.",
+      tags: ["React-typescript", "Next.js", "Tailwind", "react-dnd", "React Flow", "shadcn/ui", "lucide-react"],
       color: "from-fuchsia-500 to-purple-600",
       icon: <Sparkles size={32} />,
+      link : "https://jaya-praksh-frontend-developer.vercel.app/",
     },
     {
-      title: "SaaS Landing Page",
+      title: "Wegofin: Best Secure Payment Solutions for Businesses in India",
       description:
-        "A conversion-optimized landing page with complex scroll animations and 3D elements.",
-      tags: ["React", "Three.js", "Framer Motion"],
+        "ooking for a secure payment solution? Our platform offers integrated business payment services with secure, user-friendly software.",
+      tags: ["HTML5", "Three.js", "GSAP", "Bootstrap5", "jQuery", "laravel", "php", "javascript", "css3", "Rive" ],
       color: "from-emerald-400 to-teal-500",
       icon: <Zap size={32} />,
+      link : "https://www.wegofin.com/",
     },
   ];
 
@@ -378,9 +381,9 @@ export default function Portfolio() {
                   {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
                 </button>
 
-                <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:scale-105">
+                <a href="#resume" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:scale-105 inline-block">
                   Resume
-                </button>
+                </a>
               </div>
             </div>
 
@@ -447,7 +450,7 @@ export default function Portfolio() {
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
               Frontend Developer with{" "}
               <span className="text-gray-900 dark:text-white font-semibold">
-                3.5+ years
+                4+ years
               </span>{" "}
               of experience crafting pixel-perfect, immersive digital
               experiences using modern web technologies.
@@ -488,7 +491,7 @@ export default function Portfolio() {
             <div className="bg-white/80 dark:bg-black/80 backdrop-blur-xl rounded-[22px] p-8 border border-white/20 dark:border-white/10">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-300 dark:divide-white/10">
                 {[
-                  { label: "Experience", value: "3.5+", suffix: "Years" },
+                  { label: "Experience", value: "4+", suffix: "Years" },
                   { label: "Projects", value: "150+", suffix: "Completed" },
                   { label: "Expertise", value: "100%", suffix: "Frontend" },
                   { label: "Availability", value: "24/7", suffix: "Support" },
@@ -584,9 +587,9 @@ export default function Portfolio() {
                   A selection of my best work.
                 </p>
               </div>
-              <button className="flex items-center gap-2 text-gray-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
+              <a href="https://github.com/EvilWolf-70" className="flex items-center gap-2 text-gray-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
                 View Github <Github size={18} />
-              </button>
+              </a>
             </div>
           </Reveal>
 
@@ -624,7 +627,7 @@ export default function Portfolio() {
                       {project.description}
                     </p>
                     <a
-                      href="#"
+                      href={project.link} target="__blank"
                       className="inline-flex items-center gap-2 text-sm font-bold text-gray-900 dark:text-white border-b border-transparent hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-all pb-0.5"
                     >
                       View Case Study <ExternalLink size={14} />
@@ -718,7 +721,7 @@ export default function Portfolio() {
                               ? "border-red-500 focus:ring-red-500"
                               : "border-gray-200 dark:border-white/10 focus:border-cyan-500 focus:ring-cyan-500"
                           } focus:ring-1 outline-none transition-all text-gray-900 dark:text-white`}
-                          placeholder="John Doe"
+                          placeholder="Jaya Prakash T"
                         />
                         {errors.name && (
                           <div className="absolute right-3 top-3 text-red-500 animate-pulse">
@@ -748,7 +751,7 @@ export default function Portfolio() {
                               ? "border-red-500 focus:ring-red-500"
                               : "border-gray-200 dark:border-white/10 focus:border-cyan-500 focus:ring-cyan-500"
                           } focus:ring-1 outline-none transition-all text-gray-900 dark:text-white`}
-                          placeholder="john@example.com"
+                          placeholder="jaya@example.com"
                         />
                         {errors.email && (
                           <div className="absolute right-3 top-3 text-red-500 animate-pulse">
